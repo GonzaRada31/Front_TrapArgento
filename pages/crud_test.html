@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Test</title>
+    <link rel="stylesheet" href="../css/crud_test.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/crud_test.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD Test</h1>
+
+        <section class="form-section">
+            <h2>Crear Usuario</h2>
+            <form id="createUserForm">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit">Crear Usuario</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Lista de Usuarios</h2>
+            <button id="listUsersButton">Listar Usuarios</button>
+            <ul id="userList"></ul>
+        </section>
+    </div>
+</body>
+</html>
